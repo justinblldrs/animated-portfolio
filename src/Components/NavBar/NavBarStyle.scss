@@ -1,0 +1,39 @@
+@import "../../AppStyle.scss";
+
+.navbar{
+    height: 100px;
+
+    .wrapper{
+        max-width: 1366px;
+        margin: auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        height: 100%;
+        // padding-left: 250px;
+
+        @include mobile{
+            justify-content: end;
+            padding-right: 30px;
+        }
+        
+        span{
+            font-weight: bold;
+
+            @include mobile{
+                display: none;
+            }
+        }
+
+        .social{
+            display: flex;
+            gap: 20px;
+
+            img{
+                width: 28px;
+                height: 28px;
+            }
+        }
+
+    }
+}
